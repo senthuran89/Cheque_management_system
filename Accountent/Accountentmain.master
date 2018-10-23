@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Accountentmain.master.cs" Inherits="Accountent_Accountentmain" %>
+
+<%@ Register assembly="FlashControl" namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style5
+        {
+            height: 150px;
+        }
+        .style7
+        {
+            height: 14px;
+        }
+        .style6
+        {
+            height: 71px;
+            }
+        .style4
+        {
+            height: 71px;
+        }
+        .style8
+        {
+            height: 27px;
+        }
+    </style>
+</head>
+<body bgcolor="White">
+    <form id="form1" runat="server">
+    <table align="center" bgcolor="White" frame="box" 
+        style="width: 87%; height: 480px;">
+        <tr>
+            <td align="left" class="style5" colspan="2" valign="top">
+                <asp:Image ID="Image1" runat="server" Height="230px" 
+                    ImageUrl="~/images/accountent.jpg" Width="1156px" />
+                </td>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="#99CCFF" class="style7" colspan="2" 
+                valign="top">
+                &nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Arial Unicode MS" Font-Overline="False" Font-Size="Medium" 
+                    Font-Underline="True" ForeColor="Black" 
+                    
+                    
+                    Text=" ACCOUNTANT   ACCOUNT &gt;&gt;&gt; CHEQUE MANAGEMENT SYSTEM (CMS)                                                   "></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="#99CCFF" class="style6" valign="top">
+                <br />
+                <asp:TreeView ID="TreeView1" runat="server" ImageSet="Contacts" NodeIndent="10" 
+                    ShowLines="True">
+    <ParentNodeStyle Font-Bold="True" ForeColor="#5555DD" />
+    <HoverNodeStyle Font-Underline="False" />
+    <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" 
+                        VerticalPadding="0px" />
+    <Nodes>
+        <asp:TreeNode NavigateUrl="~/Accountent/intro.aspx" Text="Home" Value="Home">
+        </asp:TreeNode>
+        <asp:TreeNode Text="Bank" Value="Bank">
+            <asp:TreeNode NavigateUrl="~/Accountent/viewebankbalance.aspx" 
+                Text="Bank Balance" Value="Bank Balance"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/viewbanktrf.aspx" 
+                Text="View Bank Transitions " Value="View Bank Transitions "></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Customers" Value="Customers">
+            <asp:TreeNode NavigateUrl="~/Accountent/Addnewcustomer.aspx" 
+                                Text="Add New Customer" Value="Add New Customer">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/oldcustomer.aspx" Text="Old Customer" 
+                                Value="Old Customer"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/Updatecustomerdetails.aspx" 
+                                Text="Edit Last Entry" Value="Edit Last Entry">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/Viewcustomers.aspx" 
+                Text="View All Customers" Value="View All Customers"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Suppliers" Value="Suppliers">
+            <asp:TreeNode NavigateUrl="~/Accountent/addnewsuppliers.aspx" 
+                                Text="Add New Supplier" Value="Add New Supplier">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/oldsup.aspx" 
+                                Text="Old Suppliers" Value="Old Suppliers"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/updatesupdetails.aspx" 
+                                Text="Edit Last Entry " Value="Edit Last Entry ">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/ViewSuppliers.aspx" 
+                Text="View All Suppliers" Value="View All Suppliers"></asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Cash" Value="Cash">
+            <asp:TreeNode NavigateUrl="~/Accountent/Cashdeposit.aspx" Text="Cash Deposit" 
+                                Value="Cash Deposit"></asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/cashwithdrowal.aspx" 
+                                Text="Cash Withdrawal  " Value="Cash Withdrawal  ">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/Viewcashdeposit.aspx" 
+                Text="View Cash Deposit details" Value="View Cash Deposit details">
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/Accountent/Viewwcashwithdrawals.aspx" 
+                Text="View Cash Withdrawal Details" Value="View Cash Withdrawal Details">
+            </asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="Cheque " Value="Cheque ">
+            <asp:TreeNode 
+                                Text="Cheque Deposit " Value="Cheque Deposit " 
+                NavigateUrl="~/Accountent/cuschequeview.aspx">
+                <asp:TreeNode NavigateUrl="~/Accountent/cuschequeview.aspx" 
+                    Text="Customer's Cheque" Value="Customer's Cheque"></asp:TreeNode>
+                <asp:TreeNode Text="Supplier's Cheque" Value="Supplier's Cheque" 
+                    NavigateUrl="~/Accountent/SupChequeview.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="Others Cheque" Value="Others Cheque" 
+                    NavigateUrl="~/Accountent/OtherChequeDeposit.aspx"></asp:TreeNode>
+                <asp:TreeNode NavigateUrl="~/Accountent/Viewchequedeposit.aspx" 
+                    Text="View All Cheque Deposit" Value="View All Cheque Deposit">
+                </asp:TreeNode>
+            </asp:TreeNode>
+            <asp:TreeNode NavigateUrl="~/cashier/Cheque payments.aspx" 
+                                Text="Cheque IssueDetails" Value="Cheque Payments">
+                <asp:TreeNode Text="Own Cheque" Value="Own Cheque" 
+                    NavigateUrl="~/Accountent/ownchequeissue.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="Customer's Cheque" Value="Customer's Cheque" 
+                    NavigateUrl="~/Accountent/cusissuechequeview.aspx"></asp:TreeNode>
+                <asp:TreeNode Text="Supplier's Cheque" Value="Supplier's Cheque" 
+                    NavigateUrl="~/Accountent/supchequeissueview.aspx"></asp:TreeNode>
+                <asp:TreeNode NavigateUrl="~/Accountent/ViewChequeissues.aspx" 
+                    Text="View All Cheque Issues" Value="View All Cheque Issues"></asp:TreeNode>
+            </asp:TreeNode>
+            <asp:TreeNode 
+                                Text="Cheque Reture " Value="Cheque Reture ">
+                <asp:TreeNode NavigateUrl="~/Accountent/Chequereturnview.aspx" 
+                    Text="Insert a Cheque Reture " Value="Cheque Reture "></asp:TreeNode>
+                <asp:TreeNode NavigateUrl="~/Accountent/Chequereturnsearchform.aspx" 
+                    Text="View All Cheque Returns" Value="View All Cheque Returns">
+                </asp:TreeNode>
+            </asp:TreeNode>
+        </asp:TreeNode>
+        <asp:TreeNode Text="User Control " Value="User Control ">
+            <asp:TreeNode NavigateUrl="~/Accountent/Changepassword.aspx" 
+                                Text="Change Password" Value="Change Password">
+            </asp:TreeNode>
+        </asp:TreeNode>
+    </Nodes>
+    <NodeStyle Font-Names="Verdana" Font-Size="8pt" ForeColor="Black" 
+                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+</asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
+            </td>
+            <td align="left" class="style4" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="#99CCFF" class="style8" valign="top" colspan="2">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Times New Roman" ForeColor="Black" 
+                    Text="Copyright 2013.@ The Jaffna Appz Team.All rights reserved." 
+                    Width="577px"></asp:Label>
+            </td>
+        </tr>
+        </table>
+</form>
+</body>
+</html>

@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://schemas.microsoft.com/AspNet/SiteMap-File-1.0" >
+    <siteMapNode >
+      <siteMapNode url="~/home.aspx" title="CMS Home"  description="One" />
+      <siteMapNode url="~/Sitemap.aspx" title="Site Map"  description="One" />
+      <siteMapNode url="~/cmsintro.aspx" title="User Login"  description="" >
+              <siteMapNode url="~/Adminlogin.aspx" title="Admin"  description="One" />
+        <siteMapNode url="~/Accountentlogin.aspx" title="Accountant"  description="Two" />
+        <siteMapNode url="~/Cashierlogin.aspx" title="Cashier"  description="Three" />
+      </siteMapNode>
+      <!--<siteMapNode url="~/systemoverview.aspx" title="System Overview"  description="One" />-->
+      <siteMapNode url="~/About.aspx" title="About"  description="One" />
+      <siteMapNode url="~/Contant.aspx" title="Contacts"  description="One" />
+         </siteMapNode>
+</siteMap>

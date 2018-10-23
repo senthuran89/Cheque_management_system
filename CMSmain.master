@@ -1,0 +1,110 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CMSmain.master.cs" Inherits="CMSmain" %>
+
+<%@ Register namespace="Bewise.Web.UI.WebControls" tagprefix="Bewise" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Untitled Page</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+
+ p.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:10.0pt;
+	margin-left:0in;
+	line-height:115%;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	}
+        .style1
+        {
+            width: 902px;
+        }
+        .style4
+        {
+            height: 237px;
+            width: 568px;
+        }
+        .style5
+        {
+            height: 135px;
+        }
+        .style6
+        {
+            height: 309px;
+            width: 172px;
+        }
+        </style>
+</head>
+<body bgcolor="White">
+    <form id="form1" runat="server">
+    <table align="center" bgcolor="White" frame="box" 
+        style="width: 87%; height: 520px;">
+        <tr>
+            <td align="left" class="style5" colspan="2" valign="top">
+                <asp:Image ID="Image1" runat="server" Height="236px" 
+                    ImageUrl="~/images/cmsfront.bmp" Width="1156px" />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="#99CCFF" class="style1" colspan="2" 
+                valign="top">
+                &nbsp;<asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Arial Unicode MS" Font-Overline="False" Font-Size="Medium" 
+                    Font-Underline="True" ForeColor="Black" 
+                    Text="CHEQUE MANAGEMENT SYSTEM (CMS)                                                   "></asp:Label>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <br />
+            </td>
+        </tr>
+        <tr>
+            <td align="left" bgcolor="#99CCFF" class="style6" height="40" valign="top">
+                <br />
+                <asp:TreeView ID="TreeView1" runat="server" BackColor="#99CCFF" 
+                    DataSourceID="SiteMapDataSource2" Font-Bold="True" Font-Italic="True" 
+                    Font-Names="Arial Black" Font-Overline="False" Font-Size="Large" 
+                    Font-Strikeout="False" Font-Underline="False" ForeColor="White" Height="322px" 
+                    ImageSet="BulletedList4" LineImagesFolder="~/TreeLineImages" 
+                    Width="136px" ShowExpandCollapse="False">
+                    <ParentNodeStyle Font-Bold="False" />
+                    <HoverNodeStyle 
+                        Font-Underline="True" ForeColor="#5555DD" />
+                    <SelectedNodeStyle Font-Underline="True" HorizontalPadding="0px" 
+                        VerticalPadding="0px" ForeColor="#5555DD" />
+                    <DataBindings>
+                        <asp:TreeNodeBinding DataMember="SiteMapNode" NavigateUrl="~/Web.sitemap" 
+                            NavigateUrlField="Url" TextField="Title" />
+                        <asp:TreeNodeBinding />
+                    </DataBindings>
+                    <NodeStyle Font-Names="Tahoma" Font-Size="10pt" ForeColor="Black" 
+                        HorizontalPadding="5px" NodeSpacing="0px" VerticalPadding="0px" />
+                    <LeafNodeStyle Font-Bold="True" Font-Italic="False" Font-Names="Aharoni" 
+                        Font-Size="Medium" ForeColor="Black" />
+                </asp:TreeView>
+                <asp:SiteMapDataSource ID="SiteMapDataSource2" runat="server" />
+            </td>
+            <td align="left" class="style4" valign="top">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <p>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </p>
+                </asp:ContentPlaceHolder>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#99CCFF" class="style2" colspan="2" height="20">
+                <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="False" 
+                    Font-Names="Times New Roman" ForeColor="Black" 
+                    Text="Copyright 2013.@ The Jaffna Appz Team.All rights reserved."></asp:Label>
+            </td>
+        </tr>
+        </table>
+</form>
+</body>
+</html>
